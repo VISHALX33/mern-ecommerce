@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
+import API from "../utils/axios";
 
 export default function Checkout() {
   const user = useSelector((s) => s.user?.userInfo);
@@ -23,8 +23,8 @@ export default function Checkout() {
 
     try {
       // 1️⃣ Create Razorpay order
-      const { data } = await axios.post(
-        "http://localhost:5000/api/payments/order",
+      const { data } = await API.post(
+        "/payments/order",
         { amount: subtotal },
         {
           headers: { Authorization: `Bearer ${user.token}` },
@@ -42,8 +42,8 @@ export default function Checkout() {
         handler: async function (response) {
           try {
             // 2️⃣ Verify payment
-            await axios.post(
-              "http://localhost:5000/api/payments/verify",
+            await API.post(
+              "/payments/verify",
               {
                 razorpay_order_id: response.razorpay_order_id,
                 razorpay_payment_id: response.razorpay_payment_id,
@@ -71,9 +71,7 @@ export default function Checkout() {
           email: user?.email || "",
           contact: shipping.phone,
         },
-        theme: {
-          color: "#6366f1",
-        },
+        theme: { color: "#6366f1" },
       };
 
       const rzp = new window.Razorpay(options);
