@@ -28,6 +28,9 @@ app.use("/api/banners", bannerRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/orders", orderRoutes);
 
+app.get("/api/health", (req, res) => {
+  res.status(200).json({ status: "OK", time: new Date() });
+});
 
 
 app.get("/", (req, res) => {
