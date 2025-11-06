@@ -5,11 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function HeroSlider() {
   const images = [
-    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1753036424/elite-crew/vd6cxahrjlr5uxj8f7sf.jpg",
-    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1753033711/elite-crew/h57yslhplat3lbzojtsr.jpg",
-    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1753037957/elite-crew/ri1aq7mdp9m73mgvncmi.jpg",
-    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1753037855/elite-crew/lze5a7zkppz4dxol4mpw.jpg",
-    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1753032434/elite-crew/aywfetozctpvxh8hkanr.jpg",
+    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1762412292/Gemini_Generated_Image_yl3xvwyl3xvwyl3x_hdxro6.png",
+    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1762412497/Gemini_Generated_Image_c20gbvc20gbvc20g_wiobmi.png",
+    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1762412499/Gemini_Generated_Image_c20gbvc20gbvc20g_1_ly9e0l.png",
+    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1762412502/Gemini_Generated_Image_yau5jlyau5jlyau5_zruka0.png",
+    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1762412504/Gemini_Generated_Image_yau5jlyau5jlyau5_1_pdfcxr.png",
+    "https://res.cloudinary.com/dwq5qifuk/image/upload/v1762412538/Gemini_Generated_Image_c20gbvc20gbvc20g_2_cssqxt.png",
   ];
 
   const settings = {

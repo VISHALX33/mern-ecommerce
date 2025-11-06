@@ -51,7 +51,7 @@ export default function FeaturedShowcase() {
 
       <div className="flex-1">
         <img
-          src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1753032434/elite-crew/aywfetozctpvxh8hkanr.jpg"
+          src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1762420246/Gemini_Generated_Image_85ybul85ybul85yb_amoqmy.png"
           alt="Shop your fashion needs"
           className="rounded-lg w-full h-full object-cover shadow"
         />
