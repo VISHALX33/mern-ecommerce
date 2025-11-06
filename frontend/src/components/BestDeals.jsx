@@ -47,11 +47,11 @@ export default function BestDeals() {
             <div className="p-3 text-center">
               <h3 className="font-semibold text-gray-800">{p.name}</h3>
               <p className="text-sm text-gray-500">{p.brand}</p>
-              <p className="font-bold text-indigo-600 mt-1">₹{p.price}</p>
+              <p className="font-bold text-emerald-600 mt-1">₹{p.price}</p>
 
               <button
                 onClick={() => handleBuyNow(p)}
-                className="mt-3 bg-indigo-600 text-white px-4 py-1 rounded-md text-sm hover:bg-indigo-700"
+                className="mt-3 bg-emerald-600 text-white px-4 py-1 rounded-md text-sm hover:bg-emerald-700"
               >
                 Buy Now
               </button>

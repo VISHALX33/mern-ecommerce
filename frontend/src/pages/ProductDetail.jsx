@@ -24,7 +24,7 @@ export default function ProductDetail() {
           <div>
             <h2 className="text-2xl font-bold">{product.name}</h2>
             <p className="text-gray-600 mt-2">{product.description}</p>
-            <div className="mt-4 text-indigo-600 font-bold text-xl">₹{product.price}</div>
+            <div className="mt-4 text-emerald-600 font-bold text-xl">₹{product.price}</div>
 
             <div className="mt-4 flex items-center gap-3">
               <label>Qty</label>
@@ -37,7 +37,7 @@ export default function ProductDetail() {
 
             <button
               onClick={() => dispatch(addToCart({ ...product, qty }))}
-              className="mt-6 bg-indigo-600 text-white px-4 py-2 rounded">
+              className="mt-6 bg-emerald-600 text-white px-4 py-2 rounded">
               Add to Cart
             </button>
           </div>

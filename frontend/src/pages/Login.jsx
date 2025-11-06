@@ -22,10 +22,10 @@ export default function Login() {
       <form onSubmit={handleSubmit} className="space-y-3">
         <input className="w-full border p-2" placeholder="Email" value={form.email} onChange={(e)=>setForm({...form,email:e.target.value})} />
         <input className="w-full border p-2" placeholder="Password" type="password" value={form.password} onChange={(e)=>setForm({...form,password:e.target.value})} />
-        <button className="w-full bg-indigo-600 text-white py-2 rounded">{status === "loading" ? "Loading..." : "Login"}</button>
+        <button className="w-full bg-emerald-600 text-white py-2 rounded">{status === "loading" ? "Loading..." : "Login"}</button>
       </form>
       <div className="mt-4 text-sm">
-        New to Auron? <Link className="text-indigo-600" to="/register">Register</Link>
+        New to Auron? <Link className="text-emerald-600" to="/register">Register</Link>
       </div>
     </div>
   );

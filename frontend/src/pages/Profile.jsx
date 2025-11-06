@@ -11,7 +11,7 @@ export default function Profile() {
         <p className="text-lg">Please login to view your profile</p>
         <Link
           to="/login"
-          className="mt-4 px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+          className="mt-4 px-5 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition"
         >
           Go to Login
         </Link>
@@ -40,13 +40,13 @@ export default function Profile() {
         <div className="flex flex-col sm:flex-row gap-3">
          <Link
         to="/my-orders"
-        className="block mt-6 bg-indigo-600 text-white py-2 rounded text-center hover:bg-indigo-700 transition"
+        className="block mt-6 bg-emerald-600 text-white py-2 rounded text-center hover:bg-emerald-700 transition"
       >
         View My Orders
       </Link>
           <Link
             to="/cart"
-            className="flex-1 text-center px-4 py-2 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition"
+            className="flex-1 text-center px-4 py-2 border border-emerald-600 text-emerald-600 rounded-lg hover:bg-emerald-50 transition"
           >
             Go to Cart
           </Link>

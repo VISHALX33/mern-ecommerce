@@ -21,7 +21,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-indigo-600 text-white shadow-md">
+    <header className="bg-emerald-600  text-white shadow-md">
       <div className="container mx-auto flex items-center justify-between py-3 px-6">
         {/* Left side: Logo + Search */}
         <div className="flex items-center gap-6">
@@ -38,7 +38,7 @@ export default function Header() {
             />
             <button
               type="submit"
-              className="absolute right-1 top-1/2 -translate-y-1/2 bg-indigo-500 text-white px-3 py-1 rounded-full text-sm hover:bg-indigo-700"
+              className="absolute right-1 top-1/2 -translate-y-1/2 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm hover:bg-emerald-700"
             >
               Search
             </button>
@@ -48,9 +48,9 @@ export default function Header() {
         {/* Right side: Cart + User */}
         <div className="flex items-center gap-6 relative">
           {/* Cart */}
-          <Link to="/cart" className="relative hover:text-indigo-200">
+          <Link to="/cart" className="relative hover:text-emerald-200">
             🛒 Cart
-            <span className="ml-1 bg-white text-indigo-600 rounded-full px-2 text-xs font-semibold">
+            <span className="ml-1 bg-white text-emerald-600 rounded-full px-2 text-xs font-semibold">
               {cart.length}
             </span>
           </Link>
@@ -60,7 +60,7 @@ export default function Header() {
             <div className="relative">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center gap-1 bg-indigo-500 px-3 py-1 rounded hover:bg-indigo-700"
+                className="flex items-center gap-1 bg-emerald-500 px-3 py-1 rounded hover:bg-emerald-700"
               >
                 {user.name}
                 <FiChevronDown size={18} />
@@ -71,35 +71,35 @@ export default function Header() {
                 <div className="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg z-50">
                   <Link
                     to="/profile"
-                    className="block px-4 py-2 hover:bg-indigo-50"
+                    className="block px-4 py-2 hover:bg-emerald-50"
                     onClick={() => setDropdownOpen(false)}
                   >
                     My Profile
                   </Link>
                   <Link
                     to="/auron-plus"
-                    className="block px-4 py-2 hover:bg-indigo-50"
+                    className="block px-4 py-2 hover:bg-emerald-50"
                     onClick={() => setDropdownOpen(false)}
                   >
                     Auron Plus
                   </Link>
                   <Link
                     to="/my-orders"
-                    className="block px-4 py-2 hover:bg-indigo-50"
+                    className="block px-4 py-2 hover:bg-emerald-50"
                     onClick={() => setDropdownOpen(false)}
                   >
                     Orders
                   </Link>
                   <Link
                     to="/wishlist"
-                    className="block px-4 py-2 hover:bg-indigo-50"
+                    className="block px-4 py-2 hover:bg-emerald-50"
                     onClick={() => setDropdownOpen(false)}
                   >
                     Wishlist
                   </Link>
                   <Link
                     to="/notifications"
-                    className="block px-4 py-2 hover:bg-indigo-50"
+                    className="block px-4 py-2 hover:bg-emerald-50"
                     onClick={() => setDropdownOpen(false)}
                   >
                     Notifications
@@ -120,7 +120,7 @@ export default function Header() {
           ) : (
             <Link
               to="/login"
-              className="bg-indigo-500 px-3 py-1 rounded hover:bg-indigo-700"
+              className="bg-emerald-500 px-3 py-1 rounded hover:bg-emerald-700"
             >
               Login
             </Link>

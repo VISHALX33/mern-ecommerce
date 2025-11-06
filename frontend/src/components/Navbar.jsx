@@ -46,7 +46,7 @@ export default function Navbar() {
           <Link
             to={cat.path}
             key={cat.name}
-            className="flex flex-col items-center text-gray-700 hover:text-indigo-600 hover:scale-105 transition-transform w-24 min-w-[90px]"
+            className="flex flex-col items-center text-gray-700 hover:text-emerald-600 hover:scale-105 transition-transform w-24 min-w-[90px]"
           >
             <img
               src={cat.img}

@@ -35,7 +35,7 @@ export default function FeaturedShowcase() {
           <div key={p._id} className="border rounded-lg p-2 hover:shadow-md transition">
             <img src={p.image || "https://via.placeholder.com/150"} alt={p.name} className="w-full h-32 object-contain mb-2" />
             <p className="text-sm font-medium text-gray-800">{p.name}</p>
-            <p className="text-green-600 text-sm font-semibold">₹{p.price}</p>
+            <p className="text-emerald-600 text-sm font-semibold">₹{p.price}</p>
           </div>
         ))}
       </div>

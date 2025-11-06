@@ -99,7 +99,7 @@ export default function Checkout() {
 
       <button
         onClick={handlePayment}
-        className="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 w-full"
+        className="bg-emerald-600 text-white py-2 px-4 rounded hover:bg-emerald-700 w-full"
       >
         Pay ₹{subtotal}
       </button>

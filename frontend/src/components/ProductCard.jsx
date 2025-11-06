@@ -11,10 +11,10 @@ export default function ProductCard({ product }) {
         <h3 className="mt-2 font-semibold">{product.name}</h3>
       </Link>
       <div className="mt-auto">
-        <div className="text-indigo-600 font-bold">₹{product.price}</div>
+        <div className="text-emerald-600 font-bold">₹{product.price}</div>
         <button
           onClick={() => dispatch(addToCart({ ...product, qty: 1 }))}
-          className="mt-2 w-full bg-indigo-600 text-white py-1 rounded">
+          className="mt-2 w-full bg-emerald-600 text-white py-1 rounded">
           Add to Cart
         </button>
       </div>

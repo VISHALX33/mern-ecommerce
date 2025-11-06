@@ -24,7 +24,7 @@ export default function Cart() {
                   <div className="font-semibold">{item.name}</div>
                   <div>Qty: {item.qty || 1}</div>
                 </div>
-                <div className="text-indigo-600 font-bold">₹{Number(item.price) * (item.qty || 1)}</div>
+                <div className="text-emerald-600 font-bold">₹{Number(item.price) * (item.qty || 1)}</div>
                 <button onClick={() => dispatch(removeFromCart(item._id))} className="text-red-500">Remove</button>
               </div>
             ))
@@ -35,7 +35,7 @@ export default function Cart() {
           <h2 className="font-semibold">Order Summary</h2>
           <div className="mt-2">Items: {cartItems.length}</div>
           <div className="mt-2 font-bold text-xl">Subtotal: ₹{subtotal}</div>
-          <button onClick={() => nav("/checkout", { state: { subtotal } })} className="mt-4 w-full bg-indigo-600 text-white py-2 rounded">
+          <button onClick={() => nav("/checkout", { state: { subtotal } })} className="mt-4 w-full bg-emerald-600 text-white py-2 rounded">
             Proceed to Checkout
           </button>
         </div>

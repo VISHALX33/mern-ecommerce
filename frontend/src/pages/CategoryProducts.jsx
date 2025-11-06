@@ -58,11 +58,11 @@ export default function CategoryProducts() {
               className="w-full h-48 object-contain mb-3"
             />
             <h3 className="font-medium text-gray-800 truncate">{p.name}</h3>
-            <p className="text-indigo-600 font-semibold mt-1">₹{p.price}</p>
+            <p className="text-emerald-600 font-semibold mt-1">₹{p.price}</p>
 
             <button
               onClick={() => dispatch(addToCart({ ...p, qty: 1 }))}
-              className="mt-auto bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-lg text-sm font-medium transition"
+              className="mt-auto bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg text-sm font-medium transition"
             >
               Add to Cart
             </button>
