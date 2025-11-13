@@ -11,6 +11,11 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import CategoryProducts from "./pages/CategoryProducts";
 import MyOrders from "./components/MyOrders";
+import AdminDashboard from "./admin/AdminDashboard";
+import AdminProducts from "./admin/AdminProducts";
+import AdminOffers from "./admin/AdminOffers";
+import AdminBanners from "./admin/AdminBanners";
+import AdminOrders from "./admin/AdminOrders";
 
 
 export default function App() {
@@ -32,6 +37,13 @@ export default function App() {
       <Route path="/my-orders" element={<MyOrders />} />
 <Route path="/category/:category" element={<CategoryProducts />} />
             {/* <Route path="/orders" element={<MyOrders />} /> */}
+
+            <Route path="/admin" element={<AdminDashboard />} />
+<Route path="/admin/products" element={<AdminProducts />} />
+<Route path="/admin/offers" element={<AdminOffers />} />
+<Route path="/admin/banners" element={<AdminBanners />} />
+<Route path="/admin/orders" element={<AdminOrders />} />
+
 
           </Routes>
         </main>
