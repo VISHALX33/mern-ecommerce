@@ -15,7 +15,7 @@ const orderSchema = new mongoose.Schema(
         price: Number,
       },
     ],
-    shippingInfo: {
+    shippingAddress: {
       address: String,
       city: String,
       state: String,
@@ -23,15 +23,19 @@ const orderSchema = new mongoose.Schema(
       phone: String,
       email: String,
     },
+    paymentMethod: { type: String },
     paymentInfo: {
       razorpay_order_id: String,
       razorpay_payment_id: String,
       razorpay_signature: String,
     },
-    totalAmount: Number,
+    itemsPrice: { type: Number, required: true },
+    shippingPrice: { type: Number, required: true },
+    totalPrice: { type: Number, required: true },
     status: {
       type: String,
       default: "Processing",
+      enum: ["Processing", "Shipped", "Delivered", "Cancelled"],
     },
   },
   { timestamps: true }
